@@ -38,11 +38,13 @@ export class Preloader extends Scene {
             frameHeight: 85 // 每个帧的高度
         });
         
+        // 加载道路图片
+        this.load.image('road_horizontal', 'road/horizontal.png');
+        this.load.image('road_vertical', 'road/vertical.png');
+        this.load.image('road_corner', 'road/corner.png');
+        this.load.image('road_cross', 'road/cross.png');
+        
         this.load.image('monster', 'monster/PNG/Wraith_01/PNG Sequences/Walking/Wraith_01_Moving Forward_000.png');
-        // this.load.image('background', 'nature_1/1.png');
-
-        // this.load.image('logo', 'logo.png');
-        // this.load.image('star', 'star.png');
 
         console.count('Preloader preload');
     }
